@@ -1,22 +1,8 @@
-# 🛡️ LLM-Guided Explainable Intrusion Detection System
+# LLM-Guided Explainable Intrusion Detection System
 
 A cutting-edge network security system that combines machine learning-based anomaly detection with Large Language Models (LLMs) to provide human-readable explanations of security threats.
 
-## 📋 Table of Contents
-
-- [Overview](#overview)
-- [Features](#features)
-- [System Architecture](#system-architecture)
-- [Installation](#installation)
-- [Quick Start](#quick-start)
-- [Modules](#modules)
-- [Datasets](#datasets)
-- [Usage Examples](#usage-examples)
-- [Evaluation Metrics](#evaluation-metrics)
-- [Contributing](#contributing)
-- [License](#license)
-
-## 🎯 Overview
+## Overview
 
 This project addresses critical limitations in traditional Intrusion Detection Systems (IDS) by:
 
@@ -27,13 +13,13 @@ This project addresses critical limitations in traditional Intrusion Detection S
 
 ### Key Benefits
 
-- ✅ Reduces false positive rates through ensemble detection
-- ✅ Makes security insights accessible to non-technical stakeholders
-- ✅ Provides actionable recommendations for threat mitigation
-- ✅ Supports real-time and batch processing modes
-- ✅ Integrates seamlessly with existing security infrastructure
+- Reduces false positive rates through ensemble detection
+- Makes security insights accessible to non-technical stakeholders
+- Provides actionable recommendations for threat mitigation
+- Supports real-time and batch processing modes
+- Integrates seamlessly with existing security infrastructure
 
-## 🚀 Features
+## Features
 
 ### Detection Capabilities
 
@@ -56,7 +42,7 @@ This project addresses critical limitations in traditional Intrusion Detection S
 - **Customizable Filters**: Filter by severity, time, attack type
 - **Report Generation**: Automated security reports in multiple formats
 
-## 🏗️ System Architecture
+## System Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -103,7 +89,7 @@ This project addresses critical limitations in traditional Intrusion Detection S
 └─────────────────────────────────────────────────────────────┘
 ```
 
-## 💻 Installation
+## Installation
 
 ### Prerequisites
 
@@ -161,7 +147,7 @@ mkdir -p data/raw data/processed
 # Place files in data/raw/nsl-kdd/
 ```
 
-## 🎬 Quick Start
+## Quick Start
 
 ### Option 1: Run with Sample Data
 
@@ -228,7 +214,7 @@ result = explainer.generate_explanation_with_llm(detection_info)
 print(result['explanation'])
 ```
 
-## 📦 Modules
+## Modules
 
 ### Module 1: Data Preprocessing (`data_preprocessing.py`)
 
@@ -310,7 +296,7 @@ Complete end-to-end pipeline orchestration.
 - Result aggregation
 - Report generation
 
-## 📊 Datasets
+## Datasets
 
 ### NSL-KDD (Recommended for Beginners)
 
@@ -336,7 +322,7 @@ Complete end-to-end pipeline orchestration.
 - **Attack Types**: 9 categories
 - **Download**: [UNSW](https://research.unsw.edu.au/projects/unsw-nb15-dataset)
 
-## 📝 Usage Examples
+## Usage Examples
 
 ### Example 1: Basic Detection
 
@@ -407,7 +393,7 @@ while True:
     time.sleep(60)  # Check every minute
 ```
 
-## 📈 Evaluation Metrics
+## Evaluation Metrics
 
 The system is evaluated on multiple metrics:
 
@@ -432,10 +418,6 @@ The system is evaluated on multiple metrics:
 | Isolation Forest | 89.7% | 87.4% | 92.1% | 89.7% | 8.3% |
 | Deep Neural Network | 96.8% | 97.2% | 96.4% | 96.8% | 1.5% |
 
-## 🤝 Contributing
-
-We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
-
 ### Development Setup
 
 ```bash
@@ -450,33 +432,22 @@ flake8 src/
 black src/
 ```
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- NSL-KDD, CICIDS2017, and UNSW-NB15 dataset creators
-- OpenAI and Anthropic for LLM APIs
-- scikit-learn and TensorFlow communities
-- Streamlit team for the dashboard framework
-
-## 🗺️ Roadmap
+## Roadmap
 
 ### Phase 1 (Current)
-- ✅ Basic detection engine
-- ✅ LLM integration
-- ✅ Dashboard interface
+- Basic detection engine
+- LLM integration
+- Dashboard interface
 
 ### Phase 2 (Next)
-- 🔲 Real-time packet capture
-- 🔲 Integration with Zeek/Suricata
-- 🔲 Advanced visualization
+- Real-time packet capture
+- Integration with Zeek/Suricata
+- Advanced visualization
 
 ### Phase 3 (Future)
-- 🔲 Distributed deployment
-- 🔲 Cloud integration (AWS, Azure)
-- 🔲 Mobile app for alerts
-- 🔲 Automated response system
+- Distributed deployment
+- Cloud integration (AWS, Azure)
+- Mobile app for alerts
+- Automated response system
 
 ---
